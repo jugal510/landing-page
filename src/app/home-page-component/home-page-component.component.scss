@@ -1,0 +1,310 @@
+.container-fluid {
+    &.rewards{
+        background-image: url('/assets/images/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0px;
+    &:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    @media screen and (max-width:768px){
+        background-image:none;
+    }
+    .container {
+        padding: 20px;
+        background: #fff;
+        &:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .space-outer{
+            .space-inner{
+                width: 263px;
+                height: 78px;
+                background: #b7b7b7;
+                margin-bottom: 18px;
+                @media screen and (max-width:768px){
+                    width:100%;
+                    margin:0px;
+                }
+            }
+            @media screen and (max-width:768px){
+               padding:20px;
+            }
+       }
+        .hero-reward {
+            background-image: url('/assets/images/hero.jpg');
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 100%;
+            background-position: -25% 0;
+            background-color: #f1f3e5;
+            .heading-sec {
+                float: right;
+                width: 600px;
+                padding: 70px 10px 0px 10px;
+                @media screen and (max-width:1199px){
+                    width:65%;
+                }
+                h1{
+                    margin: 0;
+                    font-size: 34px;
+                    font-weight: 900;
+                    font-family: sans-serif;
+                    @media screen and (max-width:1199px){
+                        font-size: 24px; 
+                    }
+                    @media screen and (max-width:768px){
+                        order:2;
+                        background-color: #c5cbd0;
+                        margin-top: 20px;
+                        padding: 20px;
+                    }
+                }
+                .bonus-left{
+                        width: 260px;
+                        height: 164px;
+                        float: left;
+                        background: #b7b7b7;
+                        margin-top: 45px;
+                        @media screen and (max-width:1199px){
+                            width:46%;
+                        }
+                        @media screen and (max-width:768px){
+                            order: 1;
+                            margin: auto;
+                            float: inherit;
+                        }
+                    }
+                    .bonus-right {
+                        float: left;
+                        width: 300px;
+                        padding: 0px 0px 0px 20px;
+                        margin-top: 45px;
+                        h3 {
+                            margin: 0;
+                            font-size: 34px;
+                            line-height: 35px;
+                            font-family: sans-serif;
+                            font-weight: 900;
+                            color: #592561;
+                            @media screen and (max-width:1199px){
+                                font-size: 24px; 
+                            }
+                        }
+                        h5 {
+                            margin: 0;
+                            color: #592561;
+                            font-family: sans-serif;
+                            font-size: 20px;
+                            font-weight: 800;
+                        }
+                        p {
+                            margin: 5px 0;
+                            font-family: sans-serif;
+                            font-weight: 600;
+                            font-size: 13px;
+                        }
+                        @media screen and (max-width:1199px){
+                            width: 46%;
+                        }
+                        @media screen and (max-width:768px){
+                            order: 3;
+                            float: inherit;
+                            margin: 0;
+                            width: 100%;
+                            background-color: #c5cbd0;
+                            padding: 0px 20px 20px 20px;
+                        }
+                    }
+                
+                .apply-but{
+                    clear: both;
+                    float: right;
+                    padding: 20px 10px;
+                    @media screen and (max-width:768px){
+                        order:4;
+                        text-align: center;
+                    }
+                    button {
+                        padding: 10px 40px;
+                        font-size: 16px;
+                        font-weight: 700;
+                        background: #0d1e69;
+                        color: #fff;
+                        outline: none;
+                        border: none;
+                    }
+                }
+                @media screen and (max-width:768px){
+                    display: flex;
+                    flex-direction: column;
+                    width: 85%;
+                    margin: auto;
+                    float: inherit;
+                    padding: 20px;
+                    text-align: center;
+                }
+            }
+            @media screen and (max-width:1199px){
+                background-position: -200px 0;
+            }
+            @media screen and (max-width:768px){
+                background-image: url('/assets/images/bg.jpg');
+                background-size: cover;
+                background-position: inherit;
+                height:inherit;
+            }
+        }
+        .reward-points{
+            clear: both;
+            background-color: #f6f6f6;
+            margin-top: 20px;
+            padding:25px 20px 65px 20px;
+            text-align: center;
+            .bonus-points{
+                padding:0px;
+                h3 {
+                    margin: 0px 0px 5px 0px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #592561;
+                    @media screen and (max-width:1199px){
+                        font-size: 20px;
+                    }
+                }
+                p {
+                    margin: 0;
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: #000;
+                    @media screen and (max-width:1199px){
+                        font-size: 12px;
+                    }
+                }
+                @media screen and (max-width:1199px){
+                    padding: 0px 10px;
+                }
+                @media screen and (max-width:768px){
+                    margin: 15px 0px;
+                }
+            }
+            @media screen and (max-width:768px){
+                padding:15px 35px 15px 35px;
+                background-color: inherit;
+            }
+            .reward-row{
+                @media screen and (max-width:768px){
+                    padding:0px 35px;
+                    background-color: #f6f6f6; 
+                }
+            }
+        }
+        .bonus-reward-cards{
+            padding: 25px;
+            h2{
+                text-align: center;
+                margin-bottom: 25px;
+                font-weight: bold;
+            }
+            h5{
+                color:#592561;
+                font-weight: bold;
+            }
+            p{
+                color: #000;
+                font-weight: 500;   
+            }
+            ul{
+                padding-left: 12px;
+                margin-bottom: 0px;
+                li{
+                    list-style-type: none;
+                    position: relative;
+                    margin-bottom: 5px;
+                    color: #000;
+                    font-weight: 500;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background-color: #000;
+                        border-radius: 50%;
+                        left: -10px;
+                        top: 10px;
+                    }
+                }
+            }
+            @media screen and (max-width:768px){
+                padding: 15px 25px; 
+            }
+        }
+        .frequent-questions{
+            a{
+                display: block;
+                background-color: #f6f6f6;
+                padding: 10px 20px;
+                .fa{
+                    color:#a7a7a7;
+                }
+                span{
+                    color: #0d1e69;
+                    font-weight: bold;
+                    font-size: 18px;
+                    padding-left: 15px;
+                }
+            }
+            .frequent-questions-inner{
+                max-width:720px;
+                width:100%;
+                margin: 25px auto;
+                text-align: justify;
+                @media screen and (max-width:1199px){
+                  margin:25px 0;
+                }
+                .questions-data{
+                    margin-bottom: 30px;
+                    h5{
+                        color: #592561;
+                        font-weight: bold;
+                        margin-bottom: 12px;
+                    }
+                    p{
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            @media screen and (max-width:768px){
+                padding: 0px 20px;
+                margin-bottom: 20px;
+            }
+        }
+        &.rewards-inner{
+            @media screen and (max-width:768px){
+                width:100%;
+                max-width: inherit;
+                padding:0px;
+              } 
+        }
+    }
+    .footer{
+        background-color: #000;
+        text-align: right;
+        color: #fff;
+        .container{
+            background-color: #000;
+            p{
+                margin:0px;
+            }
+        }
+        @media screen and (max-width:768px){
+            text-align: center;
+          } 
+    }
+}
+}
